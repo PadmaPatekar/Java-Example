@@ -1,0 +1,187 @@
+//Arithmatic Operator
+
+package program;
+
+public class arithmaticOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=7;
+		int b=3;
+		System.out.println("Addition:"+(a+b));
+		System.out.println("Subtraction:"+(a-b));
+		System.out.println("Multiplication:"+(a*b));
+		System.out.println("Division:"+(a/b));
+		System.out.println("Mode:"+(a%b));
+	}
+
+}
+
+//OutPut:
+Addition:10
+Subtraction:4
+Multiplication:21
+Division:2
+Mode:1
+
+//Assignment Operator
+
+package program;
+
+public class assignmentOpr {
+
+	public static void main(String[] args) {
+			int a=7;  
+			a+=3; 
+			System.out.println(a);  
+			a-=4;
+			System.out.println(a);  
+			a*=2;
+			System.out.println(a);  
+			a/=2; 
+			System.out.println(a);  
+	}
+}
+
+//OutPut
+10
+6
+12
+6
+
+//Unary operator
+
+package program;
+
+public class unaryOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			int x=10;  
+			System.out.println(x++);  
+			System.out.println(++x);//12  
+			System.out.println(x--);//12 (11)  
+			System.out.println(--x);//10  
+			
+	}
+
+}
+
+//Output
+
+10
+12
+12
+10
+
+//Relational Operator
+
+package program;
+
+public class RelationalOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=7;
+		int b=3;
+		System.out.println("a="+a+" b="+b);
+		System.out.println("a Equal To b:"+(a==b));
+		System.out.println("a Notequal b:"+(a!=b));
+		System.out.println("a Is Grater Then b:"+(a>b));
+		System.out.println("a Is Less Then b:"+(a<b));
+		System.out.println("a Is Grater Then Equal To b:"+(a>=b));
+		System.out.println("a Is Less Then Equal To b:"+(a<=b));
+		
+	}
+
+}
+//Output
+
+a=7 b=3
+a Equal To b:false
+a Notequal b:true
+a Is Grater Then b:true
+a Is Less Then b:false
+a Is Grater Then Equal To b:true
+a Is Less Then Equal To b:false
+
+//Bitwise Operator
+
+package program;
+
+public class bitwiseOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=7;
+		int b=3;
+		System.out.println(a<b&a>b);
+		System.out.println(a>b|a<b);
+		System.out.println(a>b^a<b);
+	}
+
+}
+//Output
+false
+true
+true
+
+//Logical Operator
+
+package program;
+
+public class logicalOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=7;
+		int b=3;
+		System.out.println(a<b&&a>b);
+		System.out.println(a>b||a<b);
+		
+	}
+
+}
+
+//Output
+false
+true
+
+//Shift Operator
+
+package program;
+
+public class shiftOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(10<<2);
+		System.out.println(10<<3);
+		System.out.println(10>>2); 
+		System.out.println(20>>>2); 
+	}
+
+}
+//OutPut
+40
+80
+2
+5
+
+//Ternary Operator
+
+package program;
+
+public class ternaryOpr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=7;  
+		int b=3;  
+		int min=(a<b)?a:b;  
+		System.out.println(min);  
+	}
+
+}
+//OutPut
+3
