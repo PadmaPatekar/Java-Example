@@ -1,0 +1,39 @@
+//This is ScannerExaample
+package program;
+import java.util.*;
+public class scannerClassExp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="Hello,Welcome To Scanner Class.";
+		Scanner s1=new Scanner(s);
+		System.out.println("Boolean Result: " + s1.hasNext());
+		System.out.println("String: "+ s1.nextLine());
+		s1.close();
+		Scanner in= new Scanner(System.in);
+		System.out.println("Enter your name: ");
+		String name=in.next();
+		System.out.println("Name: " + name);           
+        System.out.print("Enter your age: ");  
+        int age = in.nextInt();  
+        System.out.println("Age: " + age);  
+        System.out.print("Enter your Hobbies: ");  
+        String d = in.next();  
+        System.out.println("Hobbies: " + d);         
+        in.close();  
+	}
+
+}
+
+//OutPut
+
+Boolean Result: true
+String: Hello,Welcome To Scanner Class.
+Enter your name: 
+Padma
+Name: Padma
+Enter your age: 22
+Age: 22
+Enter your Hobbies: Listing Music
+Hobbies: Listing
+
