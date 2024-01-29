@@ -1,0 +1,42 @@
+//Class and Object
+
+package program;
+
+class obj
+{
+	String firstname; 
+	String lastname;
+	int salary;
+}
+public class classObjExample {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		obj s1=new obj();//creating an object of class 
+		obj s2=new obj();  
+		s1.firstname="Raj";
+		s1.lastname="Sharma";
+		s1.salary=30000;
+		s2.firstname="Nikhil";
+		s2.lastname="Gupta";
+		s1.salary=40000;
+		//Printing values of the object  
+		  System.out.println(s1.firstname);//accessing member through reference variable  
+		  System.out.println(s1.lastname); 
+		  System.out.println(s1.salary);	  
+		  System.out.println(s2.firstname);//accessing member through reference variable  
+		  System.out.println(s2.lastname); 
+		  System.out.println(s1.salary);
+	}
+}
+
+//Output
+
+Raj
+Sharma
+30000
+Nikhil
+Gupta
+40000
