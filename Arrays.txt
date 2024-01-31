@@ -1,0 +1,265 @@
+//Single Dimensional Array
+
+package program;
+import java.util.Scanner;
+public class singledimArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			
+		      int marks[]= {30,23,40,45,10};
+		      int score[]=new int[5];
+		    /*  for(int i=0;i<5;i++)
+		      {
+		    	  System.out.println(marks[i]);
+		      }
+		      System.out.println("Enhanced for");
+		      for(int x:marks)
+		      {
+		    	  System.out.println(x);
+		      }*/
+		      Scanner sc=new Scanner(System.in);
+		      for(int i=0;i<5;i++)
+		      {
+		    	  System.out.println("Enter position "+(i+1)+" value");
+		    	  score[i]=sc.nextInt();
+		      }
+		      for(int i=0;i<5;i++)
+		      {
+		    	  System.out.println(score[i]);
+		      }
+			}
+
+	}
+
+//OutPut
+
+Enter position 1 value
+1
+Enter position 2 value
+2
+Enter position 3 value
+3
+Enter position 4 value
+4
+Enter position 5 value
+5
+1
+2
+3
+4
+5
+
+//Two Dimensional Array
+
+package program;
+import java.util.Scanner;
+public class twoDimArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+
+	            int[][] matA=new int[2][2];
+				Scanner sc=new Scanner(System.in);
+				for(int i=0;i<2;i++)
+				{
+					for(int j=0;j<2;j++)
+					{
+						System.out.println("Enter row "+(i+1)+" column "+(j+1)+" value");
+						matA[i][j]=sc.nextInt();
+					}
+				}
+				for(int i=0;i<2;i++) {
+					for(int j=0;j<2;j++)
+					{
+						System.out.print(matA[i][j]+"\t");
+					}
+					System.out.println();
+				}
+			}
+
+
+}
+//OutPut:
+Enter row 1 column 1 value
+1
+Enter row 1 column 2 value
+2
+Enter row 2 column 1 value
+3
+Enter row 2 column 2 value
+4
+1	2	
+3	4
+
+//Two Dimensional Array using for each
+
+package program;
+import java.util.Scanner;
+public class twoDArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[][] matA=new int[2][2];
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<2;j++)
+			{
+				System.out.println("Enter row "+(i+1)+" column "+(j+1)+" value");
+				matA[i][j]=sc.nextInt();
+			}
+		}
+		for(int x[]:matA)
+		{
+			for(int y:x)
+			{
+				System.out.print(y+"\t");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+//Output:
+
+Enter row 1 column 1 value
+1
+Enter row 1 column 2 value
+2
+Enter row 2 column 1 value
+3
+Enter row 2 column 2 value
+4
+
+1	2	
+3	4	
+
+////Multi dimensional array
+
+package program;
+
+import java.util.Scanner;
+
+public class threeDArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int[][] matA=new int[3][3];
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				
+				System.out.println("Enter row "+(i+1)+" column "+(j+1)+" value");
+				matA[i][j]=sc.nextInt();
+			
+			}
+		}
+		for(int i=0;i<3;i++) 
+		{
+			for(int j=0;j<3;j++)
+			{	
+				System.out.print(matA[i][j]+"\t");			
+			}
+			System.out.println();
+		}
+	}
+	}
+//OutPut:
+
+Enter row 1 column 1 value
+1
+Enter row 1 column 2 value
+2
+Enter row 1 column 3 value
+3
+Enter row 2 column 1 value
+4
+Enter row 2 column 2 value
+5
+Enter row 2 column 3 value
+6
+Enter row 3 column 1 value
+7
+Enter row 3 column 2 value
+8
+Enter row 3 column 3 value
+9
+
+1	2	3	
+4	5	6	
+7	8	9	
+
+
+//Multi dimensional array using for each
+package program;
+
+import java.util.Scanner;
+
+public class multiDemArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] matA=new int[3][3];
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				
+				for(int k=0;j<3;j++)
+				{
+				System.out.println("Enter row "+(i+1)+" column "+(j+1)+" value");
+				matA [i][j]=sc.nextInt();
+				}
+			}
+		}
+		for(int x[]:matA)
+		{
+			for(int  y:x)
+			{
+				
+				System.out.print(y+"\t");
+				
+			}
+			System.out.println();
+		}
+	}
+
+}
+//OutPut:
+
+Enter row 1 column 1 value
+1
+Enter row 1 column 2 value
+2
+Enter row 1 column 3 value
+3
+Enter row 2 column 1 value
+4
+Enter row 2 column 2 value
+5
+Enter row 2 column 3 value
+6
+Enter row 3 column 1 value
+7
+Enter row 3 column 2 value
+8
+Enter row 3 column 3 value
+9
+
+1	2	3	
+4	5	6	
+7	8	9	
+
+ 
+
+
+
+
