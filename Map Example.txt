@@ -1,0 +1,27 @@
+//Map Example
+
+package program;
+
+import java.util.*;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<Integer,String> m=new HashMap<>();
+		m.put(101, "Amar");
+		m.put(102,"Adwait");
+		m.put(103,"Leyo");
+		m.put(104,"Devdas");
+		System.out.println(m);
+		System.out.println("Entity:"+m.keySet());
+		System.out.println("Values:"+m.values());
+		
+	}
+
+}
+//Output:
+
+{101=Amar, 102=Adwait, 103=Leyo, 104=Devdas}
+Entity:[101, 102, 103, 104]
+Values:[Amar, Adwait, Leyo, Devdas]
