@@ -1,0 +1,99 @@
+//Finding the Duplicate Elements in an ArrayList
+
+package program;
+import java.util.*;
+
+public class duplicateEleArrList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList <Integer> list =new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(1);
+		list.add(3);
+		
+	    HashSet<Integer> set =new HashSet<>();
+	    HashSet<Integer> duplicates =new HashSet<>();
+	    for(Integer element: list)
+	    {
+	    	if (!set.add(element)) {
+                // If the element is already in the set, it's a duplicate
+                duplicates.add(element);
+	    	}
+	    }
+	    System.out.println("Duplicate elements: " + duplicates);
+   
+	    }
+
+}
+
+//OutPut:
+
+Duplicate elements: [1, 3]
+//Reversing an ArrayList
+
+package program;
+import java.util.*;
+public class ReverseArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			ArrayList <Integer> list=new ArrayList<>();
+			list.add(1);
+			list.add(2);
+			list.add(3);
+			list.add(4);
+			
+			System.out.println("Original ArrayList: " + list);
+
+	        // Reverse the ArrayList
+	        Collections.reverse(list);
+
+	        System.out.println("Reversed ArrayList: " + list);
+	}
+
+}
+
+//OutPut:
+
+Original ArrayList: [1, 2, 3, 4]
+Reversed ArrayList: [4, 3, 2, 1]
+
+//Removing Duplicates from an ArrayList
+
+package program;
+import java.util.*;
+
+public class removeDupArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> list=new ArrayList<>();
+		list.add(1);
+		list.add(2);
+        list.add(3);
+        list.add(2); // Duplicate
+        list.add(4);
+        list.add(1); // Duplicate
+
+        System.out.println("ArrayList with duplicates: " + list);
+        HashSet<Integer> set =new HashSet<>();
+       ArrayList<Integer> listwithoutDuplicates=new ArrayList<>();
+        for(Integer element:list)
+        {
+        	if (set.add(element)) {
+                // If the element is added to the set successfully, it's unique
+        		listwithoutDuplicates.add(element);
+        	}
+        }
+        System.out.println("ArrayList without duplicates: " + listwithoutDuplicates);
+	}
+
+}
+
+//OutPut:
+
+ArrayList with duplicates: [1, 2, 3, 2, 4, 1]
+ArrayList without duplicates: [1, 2, 3, 4]
