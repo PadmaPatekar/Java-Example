@@ -1,0 +1,50 @@
+//
+package program;
+import java.util.*;
+public class SetExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> s=new HashSet<>();
+		s.add("Switu");
+		s.add("Monti");
+		s.add("Titu");
+		s.add("Pilu");
+		s.add("Kalya");
+		s.add("kanchya");
+		s.add("Bhorya");
+		s.add("Burnya");
+		s.add("Lali");
+		s.add("Leyo");
+		s.add("Chiu");
+		s.add("Chotu");
+		s.add("Chinglya");
+		s.add("Chakuli");
+		s.add("Chiu");
+		s.add("Simba");
+		System.out.println(s);
+		SortedSet<String> s1=new TreeSet<>();
+		s1.add("Switu");
+		s1.add("Monti");
+		s1.add("Titu");
+		s1.add("Pilu");
+		s1.add("Kalya");
+		s1.add("kanchya");
+		s1.add("Bhorya");
+		s1.add("Burnya");
+		s1.add("Lali");
+		s1.add("Leyo");
+		s1.add("Chiu");
+		s1.add("Chotu");
+		s1.add("Chinglya");
+		s1.add("Chakuli");
+		s1.add("Chiu");
+		s1.add("Simba");
+		System.out.println(s1);
+	}
+}
+
+//Output:
+
+[Monti, Kalya, Titu, Burnya, Pilu, kanchya, Bhorya, Switu]
+[Chakuli, Chinglya, Chiu, Chotu, Lali, Leyo, Simba]
