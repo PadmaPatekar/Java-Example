@@ -1,0 +1,27 @@
+//Ratate Array
+
+package program;
+import java.util.*;
+
+public class rotateArray {
+
+	public static void rotateArr(List<Integer> nums, int k) {
+        k = k % nums.size(); // Handle cases where k is greater than the array size
+        Collections.rotate(nums, k);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	        List<Integer> array = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+	        int k = 2;
+
+	        rotateArr(array, k);
+	        System.out.println("Rotated Array: " + array);
+		
+	}
+
+}
+
+//Output:
+
+Rotated Array: [4, 5, 1, 2, 3]
