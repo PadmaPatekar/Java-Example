@@ -1,0 +1,46 @@
+//Remove Element In Vector
+
+package program;
+import java.util.*;
+public class removeElementVectorExp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Vector<String> vector = new Vector<>();
+
+	        // Adding elements to the Vector
+	        vector.add("Apple");
+	        vector.add("Banana");
+	        vector.add("Orange");
+	        vector.add("Mango");
+	        vector.add("Grapes");
+	     // Removing elements by index
+	        vector.remove(1); // Removes the element at index 1
+
+	        // Removing elements by value
+	        vector.remove("Mango"); // Removes the first occurrence of "Mango"
+
+	        // Displaying elements after removal
+	        System.out.println("Vector elements after removal:");
+	        for (String element : vector) {
+	            System.out.println(element);
+	        }
+
+	        // Clearing the vector
+	        vector.clear(); // Removes all elements from the vector
+
+	        // Checking if the vector is empty
+	        System.out.println("Is the vector empty? " + vector.isEmpty()); // true
+	}
+
+}
+
+//Output:
+
+Vector elements after removal:
+Apple
+Orange
+Grapes
+Is the vector empty? true
+
+
