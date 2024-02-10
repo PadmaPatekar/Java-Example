@@ -1,0 +1,83 @@
+//implementing Stack
+
+package program;
+
+public class impStackExample {
+
+	
+		private int maxSize;
+		private int[] stackArray;
+		private int top;
+		
+		//Constructor
+		public impStackExample(int size) {
+			this.maxSize=size;
+			this.stackArray=new int[maxSize];
+			this.top=-1;//Initialize top as -1
+			
+		}
+		//method to push an element onto the stack
+		public void push(int value) {
+			if(isFull()) {
+				System.out.println("Stack is full.Cannot push element onto the stack.");		
+			}
+			else {
+				top++;
+				stackArray[top]=value;
+			}
+			}
+		//method to pop an element from the stack
+		public int pop() {
+			if(isEmpty()) {
+				System.out.println("Stack is empty.Cannot pop element from the stack.");
+				return -1;//Return -1 to indicate failure
+			}
+			else {
+				int poppedValue=stackArray[top];
+				top--;
+				return poppedValue;
+			}
+			}
+		//method to check if the stack is empty
+		public boolean isEmpty() {
+			return(top==-1);
+		}
+		//method to check if the stack is full
+		public boolean isFull() {
+			return(top==maxSize-1);
+		}
+		public int peek() {
+			if(isEmpty()) {
+				System.out.println("Stack is empty.No elements to peek.");
+				return -1;
+			}
+			else {
+				return stackArray[top];
+			}
+		}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		impStackExample stack=new impStackExample(5);
+		stack.push(10);
+		stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+		System.out.println("Peek: "+stack.peek());
+		System.out.println("Popped: "+stack.pop());
+		System.out.println("Popped: "+stack.pop());
+		System.out.println("Peek: "+stack.peek());
+		stack.push(60);
+		System.out.println("Peek: "+stack.peek());
+	}
+
+}
+
+//Output:
+Peek: 50
+Popped: 50
+Popped: 40
+Peek: 30
+Peek: 60
