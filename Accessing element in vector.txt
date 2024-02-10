@@ -1,0 +1,38 @@
+//Accessing element in vector
+
+package program;
+import java.util.*;
+public class VectorAccessExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vector<String> vector=new Vector<>();
+		vector.add("Apple");
+		vector.add("Banana");
+		vector.add("Orange");
+        vector.add("Mango");
+        vector.add("Grapes");
+
+     // Accessing elements by index
+        System.out.println("Element at index 0: " + vector.get(0)); // Apple
+        System.out.println("Element at index 3: " + vector.get(3)); // Mango
+
+        // Accessing all elements using a loop
+        System.out.println("All elements:");
+        for (int i = 0; i < vector.size(); i++) {
+            System.out.println(vector.get(i));
+        }
+	
+	}
+}
+//Output:
+
+Element at index 0: Apple
+Element at index 3: Mango
+All elements:
+Apple
+Banana
+Orange
+Mango
+Grapes
+
