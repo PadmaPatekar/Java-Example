@@ -1,0 +1,41 @@
+//Problem: Group Anagrams:
+•Given an array of strings, group anagrams together. For example, given ["eat","tea","tan","ate","nat","bat"], return [["eat","tea","ate"],["tan","nat"],["bat"]].
+
+package program;
+import java.util.*;
+public class groupAnagrams {
+	public List<List<String>> groupAnagram(String[] strs){
+		Map<String,List<String>> map=new HashMap<>();
+		
+		for(String word:strs) {
+			char[] charArray=word.toCharArray();
+			Arrays.sort(charArray);
+			String sortedWord=String.valueOf(charArray);
+			if(!map.containsKey(sortedWord)) {
+				map.put(sortedWord,new ArrayList<>());
+			}
+			map.get(sortedWord).add(word);	
+		}
+		List<List<String>> result=new ArrayList<>(map.values());
+		return result;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] words= {"eat","tea","tan","ate","nat","bat"};
+		groupAnagrams groupanagram=new groupAnagrams();
+		List<List<String>> groupedanagram=groupanagram.groupAnagram(words);
+		
+		// Print the grouped anagrams
+        for (List<String> group : groupedanagram) {
+            System.out.println(group);
+        }
+	}
+
+}
+
+//Output:
+
+[eat, tea, ate]
+[bat]
+[tan, nat]
