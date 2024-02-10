@@ -1,0 +1,58 @@
+// Iterating through a Vector
+
+
+package program;
+import java.util.*;
+public class iteratingVectorExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vector<String> vector=new Vector<>();
+		vector.add("Apple");
+        vector.add("Banana");
+        vector.add("Orange");
+        vector.add("Mango");
+        vector.add("Grapes");
+     // Method 1: Using a traditional for loop
+        System.out.println("Iterating using a traditional for loop:");
+        for (int i = 0; i < vector.size(); i++) {
+            System.out.println(vector.get(i));
+        }
+        // Method 2: Using an enhanced for loop (for-each loop)
+        System.out.println("\nIterating using an enhanced for loop:");
+        for (String fruit : vector) {
+            System.out.println(fruit);
+        }
+	
+	// Method 3: Using an iterator
+    	System.out.println("\nIterating using an iterator:");
+    	Iterator<String> iterator = vector.iterator();
+    	while (iterator.hasNext()) {
+    		System.out.println(iterator.next());
+    	}
+
+}
+}
+
+//Output:
+
+Iterating using a traditional for loop:
+Apple
+Banana
+Orange
+Mango
+Grapes
+
+Iterating using an enhanced for loop:
+Apple
+Banana
+Orange
+Mango
+Grapes
+
+Iterating using an iterator:
+Apple
+Banana
+Orange
+Mango
+Grapes
